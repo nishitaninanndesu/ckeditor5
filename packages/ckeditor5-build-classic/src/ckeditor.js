@@ -38,6 +38,8 @@ import Font from '@ckeditor/ckeditor5-font/src/font';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
+import Autosave from '@ckeditor/ckeditor5-autosave/src/autosave';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -72,7 +74,9 @@ ClassicEditor.builtinPlugins = [
 	Font,
 	Highlight,
 	RemoveFormat,
-	WordCount
+	WordCount,
+	SourceEditing,
+	Autosave
 ];
 
 // Editor configuration.
@@ -84,7 +88,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'alignment',
 			'htmlEmbed',
-			// 'sourceEditing',
+			'sourceEditing',
 			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
 			'highlight',
 			'bold',
