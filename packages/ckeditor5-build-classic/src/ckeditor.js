@@ -37,7 +37,6 @@ import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
-import RevisionHistory from '@ckeditor/ckeditor5-revision-history/src/revisionhistory';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -73,7 +72,6 @@ ClassicEditor.builtinPlugins = [
 	Font,
 	Highlight,
 	RemoveFormat,
-	RevisionHistory,
 	WordCount
 ];
 
@@ -86,7 +84,7 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'alignment',
 			'htmlEmbed',
-			'sourceEditing',
+			// 'sourceEditing',
 			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
 			'highlight',
 			'bold',

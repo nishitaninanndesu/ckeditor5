@@ -47,7 +47,6 @@
     "@ckeditor/ckeditor5-paragraph": "^29.1.0",
     "@ckeditor/ckeditor5-paste-from-office": "^29.1.0",
     "@ckeditor/ckeditor5-remove-format": "^29.1.0",
-    "@ckeditor/ckeditor5-revision-history": "^29.1.0",
     "@ckeditor/ckeditor5-table": "^29.1.0",
     "@ckeditor/ckeditor5-typing": "^29.1.0",
     "@ckeditor/ckeditor5-alignment": "^29.1.0",
