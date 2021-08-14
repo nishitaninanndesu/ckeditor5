@@ -31,6 +31,16 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
+// added
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
+import RevisionHistory from '@ckeditor/ckeditor5-revision-history/src/revisionhistory';
+import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -58,15 +68,29 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Alignment,
+	HtmlEmbed,
+	Font,
+	Highlight,
+	RemoveFormat,
+	SourceEditing,
+	RevisionHistory,
+	WordCount
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
+			'removeFormat',
 			'heading',
 			'|',
+			'alignment',
+			'htmlEmbed',
+			'sourceEditing',
+			'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
+			'highlight',
 			'bold',
 			'italic',
 			'link',
@@ -102,5 +126,5 @@ ClassicEditor.defaultConfig = {
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+	language: 'ja'
 };
